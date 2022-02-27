@@ -1,10 +1,28 @@
 function randNum() {
     varX = Math.floor(Math.random() * 10);
     document.getElementById("random").innerHTML = varX;
-    varA = varX + 1;
-    varB = varX - 1;
-    varC = varX * 2;
-    varD = varX / 2;
-    varE = varX % 2;
-    document.write("your number is " + varX + ". One more than that is " + varA + " and one less is " + varB + ". Doubled, it is " + varC + " and halved it is " + varD + " with a remainder of " + varE + ".");
+}
+function addOne() {
+    document.getElementById("up1").innerHTML = varX+1;
+}
+function subOne() {
+    document.getElementById("down1").innerHTML = varX-1;
+}
+function addFive() {
+    document.getElementById("up5").innerHTML = varX+5;
+}
+function subFive() {
+    document.getElementById("down5").innerHTML = varX-5;
+}
+function multiTwo() {
+    document.getElementById("double").innerHTML = varX*2;
+}
+function divTwo() {
+    document.getElementById("halve").innerHTML = varX/2;
+}
+function incOne() {
+    document.getElementById("inc").innerHTML = varX++;
+}
+function decOne() {
+    document.getElementById("dec").innerHTML = varX--;
 }
