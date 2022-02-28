@@ -17,3 +17,6 @@ function notNine() {
 function checkType() {
     document.write(typeof varX.toString());
 }
+function writeIt() {
+    document.write("The number is " + varX).innerHTML;
+}
