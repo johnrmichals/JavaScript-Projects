@@ -13,3 +13,7 @@ function timeCheck() {
         document.getElementById("whatdo").innerHTML = "Up and at em! Only " + (sleepytime - time.getHours()) + " hours before bed!";
     }
 }
+function intentionalMistake() {
+    var whoops = "error"
+}
+console.log(whoops);//displays the error in the console
