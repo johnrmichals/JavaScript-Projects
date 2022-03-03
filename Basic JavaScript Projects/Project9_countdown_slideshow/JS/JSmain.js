@@ -1,5 +1,5 @@
-var slideIndex = 1; //creates a variable set to 1
-showSlides(slideIndex);
+var slideIndex = 1; 
+showSlides(slideIndex); 
 
 // Next/previous controls
 function plusSlides(n) {
@@ -25,4 +25,22 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+var secondsLabel = (document.getElementById("seconds"));
+var totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+}
+
+function pad(v) {
+  var valString = v + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
 }

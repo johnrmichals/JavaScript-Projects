@@ -9,7 +9,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
-  border-style: 100px, solid, #422f1d;
+  border-style: solid;
 }
 
 /* Hide the images by default */
